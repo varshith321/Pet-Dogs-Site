@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>Pup Cafe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<style>
+body {
+    background-color: #5d5c61;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 72px;
+  color: #ffffff;
+}
+
+p.new_font {
+  /*text-indent: 1.5em;*/
+  font: 24px Helvetica, Sans-Serif;
+  color: white;
+  
+  padding: 20px;
+  text-align: justify;
+} 
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #557a95;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #7395ae;
+}
+
+.button {
+    background-color: #557a95;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #7395ae;
+  }
+  * {box-sizing:border-box}
+
+</style>
+</HEAD>
+
+<body>
+  <a href="{% url 'index' %}"> <img src="/media/dog_logo.png" width=150></a>
+
+<ul>
+    <li><a href="{% url 'index' %}">About Us</a></li>
+  <li><a href="menu.html">Menu</a></li>
+  <li><a href="reservations.html">Reservations</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+<div class="Pupcafe">
+    <p>About Us</p><p class="new_font"> Pups and Teacups is the best place in town to play with pups 
+    and grab your favorite coffee or tea beverage.
+    We are dedicated to helping homeless furry friends find their forever homes, 
+    so if you fall in love with a furry friend during your visit, please see the counter about adopting them.
+    Our mission is to revolutionize dog adoption by offering a comfortable and fun space for humans and 
+    dogs to hang out with each other, away from overcrowded shelters, which can provoke fear and aggression in perfectly adoptable pups. 
+    In addition to helping pups find homes, we also offer the opportunity for people unable to have pets of their own to spend quality 
+    time with furry friends (and vice versa) without the commitment of adoption.</p>                  
+</div>
+</body>
+</html>       
